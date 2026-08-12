@@ -1,0 +1,2 @@
+# No external dependencies required for Week 1
+# Python 3 is required

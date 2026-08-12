@@ -1,0 +1,2 @@
+RSA is a public key cryptographic algorithm.
+It uses a public key and a private key.

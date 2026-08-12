@@ -1,0 +1,2 @@
+AES is a symmetric block cipher.
+It is widely used for secure data encryption.

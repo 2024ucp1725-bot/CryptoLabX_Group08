@@ -1,0 +1,2 @@
+Diffie Hellman is used for secure key exchange.
+It allows two parties to establish a shared secret.

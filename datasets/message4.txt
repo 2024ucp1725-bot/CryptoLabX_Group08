@@ -1,0 +1,2 @@
+Hash functions produce a fixed length output.
+A secure hash function should be difficult to reverse.

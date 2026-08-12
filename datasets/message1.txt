@@ -1,0 +1,4 @@
+Cryptography protects information.
+Encryption converts plaintext into ciphertext.
+Security requires confidentiality and integrity.
+
