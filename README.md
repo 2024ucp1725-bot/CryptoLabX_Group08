@@ -51,3 +51,36 @@ being developed as part of the Cryptography Laboratory.
 
 ```bash
 python3 main.py
+## Lab Assignment 3 – Secure E-Commerce Website
+
+Student Name: Bharat Saini
+Group : 08
+Assigned Application: E-Commerce Website
+Programming Language: Python
+SAST Tool: SonarQube
+
+### Core Functionalities
+1. Product browsing
+2. Shopping cart
+3. Checkout
+4. Order history
+5. User/account functionality
+
+### Security Testing
+The application was analyzed using SonarQube.
+The analysis identified 4 issues related to security and code quality.
+
+### SAST Issues Identified
+1. CSRF protection
+2. HTTP methods should be specified
+3. HTTP methods should be specified
+4. Debug mode should be disabled in production
+
+### Lab Progress
+- [x] Application developed
+- [x] Vulnerabilities included
+- [x] SonarQube analysis performed
+- [x] SonarQube report generated
+- [x] Test cases added
+- [x] Output generated
+- [x] GitHub repository updated
