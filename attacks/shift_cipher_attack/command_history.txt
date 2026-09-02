@@ -1,0 +1,999 @@
+    1  sudo apt update
+    2  sudo apt install gcc g++ make git tree 
+    3  gcc --version
+    4  g++ --version
+    5  git --version
+    6  make --version
+    7  cd ~
+    8  pwd
+    9  mkdir os_lab
+   10  cd os_lab
+   11  pwd
+   12  cd ~
+   13  pwd
+   14  mkdir os_lab
+   15  cd os_lab
+   16  pwd
+   17  mkdir testdir
+   18  ls
+   19  cd testdir
+   20  pwd
+   21  cd
+   22  pwd
+   23  rmdir testdir
+   24  cd os_lab
+   25  ls
+   26  rmdir testdir
+   27  ls
+   28  cd os_lab
+   29  touch file1.txt
+   30  ls
+   31  echo "Operating System Lab" > file1.txt
+   32  cat file1.txt
+   33  cp file1.txt file2.txt
+   34  ls
+   35  mv file2.txt copy.txt
+   36  ls
+   37  cat file1.txt
+   38  wc file1.txt
+   39  head file1.txt
+   40  tail file1.txt
+   41  rm copy.txt
+   42  ls
+   43  ls _1 file1.txt
+   44  chmod 644 file1.txt
+   45  ls -1 file1.txt
+   46  grep "operating" file1.txt
+   47  grep "Operating" file1.txt
+   48  find. -name "file1.txt"
+   49  find . -name "file1.txt"
+   50  cp file1.txt file2.txt
+   51  cmp file1.txt file2.txt
+   52  diff file1.txt file2.txt
+   53  echo "linox lab" >> file2.txt
+   54  diff file1.txt file2.txt
+   55  head file1.txt
+   56  tail file1.txt
+   57  less file1.txt
+   58  more file1.txt
+   59  ln file1.txt hardlink.txt
+   60  ls -l
+   61  touch temp.txt
+   62  echo "temporary data" > temp.txt
+   63  shred -u temp.txt
+   64  ls
+   65  echo "Hello" > source.txt
+   66  dd if=source.txt of=destination.txt
+   67  cat destination.txt
+   68  sudo updatedb
+   69  sudo apt install plocate
+   70  cd ~/os_lab
+   71  ls
+   72  sudo dpkg --configure -a
+   73  cd ~/os_lab
+   74  sudo dpkg --remove plocate
+   75  sudo apt --fix-broken install
+   76  ps
+   77  ps -f
+   78  sleep 60 &
+   79  ps
+   80  kill 658
+   81  ps
+   82  nice -o pid,ni,cmd
+   83  nice -n 10 sleep 30 &
+   84  ps -o pid,ni,cmd
+   85  top
+   86  nice -n 10 sleep 30 &
+   87  ps -o pid,ni,cmd
+   88  sleep 60 &
+   89  ps
+   90  kill -TERM PID
+   91  kill -TERM 828
+   92  ps
+   93  top
+   94  ps
+   95  ps -f
+   96  ps -o pid,ppid,ni,cmd
+   97  sleep 30 &
+   98  nice -n 10 sleep 30 &
+   99  ps -o pid,ni,cmd
+  100  sleep 60 &
+  101  jobs
+  102  ps
+  103  fg
+  104  ps
+  105  df -h
+  106  du -sh ~/os_lab
+  107  ls -1h ~/os_lab
+  108  ls -1 file.txt
+  109  ls -1 file1.txt
+  110  chmod 644 file1.txt
+  111  ls -1 file1.txt
+  112  chmod 755 file1.txt
+  113  ls -1 file1.txt
+  114  ls -ln file1.txt
+  115  stat file1.txt
+  116  umask
+  117  touch test_umask.txt
+  118  ls -1 test_umask.txt
+  119  find ~/os_lab -name "file1.txt"
+  120  find ~/os_lab -type f
+  121  find ~/os_lab -type f -name "*.txt"
+  122  find ~/os_lab -type f -size +1k
+  123  grep "Hello" source.txt
+  124  grep -n "Hello" source.txt
+  125  grep -r "Hello" ~/os_lab
+  126  wc source.txt
+  127  wc -1 source.txt
+  128  head source.txt
+  129  tail source.txt
+  130  sort source.txt
+  131  cat source.txt | wc -1
+  132  wc --lines source.txt
+  133  ls -1 | grep ".txt"
+  134  tar -cvf os_lab.tar *.txt
+  135  tar -tvf os_lab.tar
+  136  mkdir extract_test
+  137  tar -xvf os_lab.tar -C extract_test
+  138  ls extract_test
+  139  whoami
+  140  uname
+  141  uname -a
+  142  whereis gcc
+  143  which gcc
+  144  sudo whoami
+  145  man ls
+  146  echo "Operating System Lab"
+  147  clear
+  148  ls /proc
+  149  cat /proc/cpuinfo
+  150  cat /proc/$$/status
+  151  cat /proc/meminfo
+  152  df -h
+  153  du -sh ~/os_lab
+  154  systemctl --version
+  155  ip addr
+  156  ping -c 4 google.com
+  157  curl https://example.com
+  158  nslookup google.com
+  159  ss -tuln
+  160  whoami
+  161  uname -a
+  162  whereis gcc
+  163  which gcc
+  164  sudo whoami
+  165  ip addr
+  166  ping -c 4 google.com
+  167  curl https://example.com
+  168  nslookup google.com
+  169  sudo apt install dnsutils
+  170  nslookup google.com
+  171  ss -tuln
+  172  wget -O test.html https://example.com
+  173  ls -1 test.html
+  174  traceroute google.com
+  175  sudo apt install traceroute
+  176  traceroute google.com
+  177  sudo ufw status
+  178  sudo apr install ufw
+  179  sudo apt install ufw
+  180  sudo ufw status
+  181  sudo iptables -L
+  182  sudo nft list ruleset
+  183  sudo tcpdump -c 10
+  184  sudo apt install tcpdump
+  185  sudo tcpdump -c 10
+  186  cd ~/os_lab
+  187  nano pl.c
+  188  gcc p1.c -o p1
+  189  nano pL.c
+  190  ls
+  191  mv pl.c pl.c
+  192  gcc pl.c -o pl
+  193  ./pl
+  194  nano p2.c
+  195  gcc p2.c -o p2
+  196  ./p2
+  197  nano p3.c
+  198  gcc p3.c -o p3
+  199  ./p3
+  200  nano p4.c
+  201  gcc p4.c -o p4
+  202  ./p4
+  203  nano p5.c
+  204  gcc p5.c -o p5
+  205  ./p5
+  206  nano p6.c
+  207  gcc p6.c -o p6
+  208  ./p6
+  209  kill %1
+  210  pwd
+  211  mkdir testdir
+  212  cd testdir
+  213  pwd
+  214  cd ..
+  215  rmdir testdir
+  216  ls
+  217  tree ~/os_lab
+  218  sudo apt install tree -y
+  219  tree ~/os_lab
+  220  cd ~/os_lab
+  221  cp file1.txt copy.txt
+  222  mv copy.txt renamed.txt
+  223  cmp file1.txt renamed.txt
+  224  diff file1.txt renamed.txt
+  225  cd ~/os_lab
+  226  cp file1.txt copy.txt
+  227  mv copy.txt renamed.txt
+  228  cmp file1.txt renamed.txt
+  229  diff file1.txt renamed.txt
+  230  less source.txt
+  231  more source.txt
+  232  dd if=source.txt of=ddcopy.txt
+  233  locate source.txt
+  234  sudo updatedb
+  235  locate source.txt
+  236  cp source.txt shred_test.txt
+  237  shred -v -n 1 shred_test.txt
+  238  touch process_test.txt
+  239  ls -1 process_test.txt
+  240  sleep 60 &
+  241  kill 3890
+  242  netstat -tuln
+  243  sudo aot install net-tools -y
+  244  sudo apt install net-tools -y
+  245  netstat -tuln
+  246  ss -tunl
+  247  curl -I https://example.com
+  248  wget -q -O page.html https://example.com
+  249  ls -1h page.html
+  250  sudo ufw status verbose
+  251  sudo iptables -L
+  252  whoami
+  253  whereis bash
+  254  ssh -V
+  255  sftp -V
+  256  uname -a
+  257  systemctl --version
+  258  systemctl status
+  259  sudo fdisk -1
+  260  sudo fdisk -l
+  261  lsblk
+  262  echo "Hello Linux"
+  263  date
+  264  which ls
+  265  man ls
+  266  ls -l | wc -l
+  267  echo "Hello Linux" > output.txt
+  268  cat output.txt
+  269  ls -l | more
+  270  top
+  271  cd ~/os_lab
+  272  git clone
+  273  https://github.com/remzi-arpacidusseau/ostep-code.git
+  274  git clone https://github.com/remzi-arpacidusseau/ostep-code.git
+  275  cd ostep-code/cpu-api
+  276  make
+  277  ./p1
+  278  cd ostep-code/cpu-api
+  279  ./p2
+  280  ./p3
+  281  ./p4
+  282  ls -l p4
+  283  ./p4
+  284  chmod +x p4
+  285  ./p4
+  286  cat p4.c
+  287  cat p4.output
+  288  /home/dell/os_lab/
+  289  explorer.exe
+  290  gedit
+  291  sudo apt install gedit
+  292  sudo apt update --fix-missing
+  293  sudo apt install gedit -y
+  294  gedit
+  295  gedit p1.c
+  296  pwd
+  297  mkdir testdir
+  298  cd testdir
+  299  pwd
+  300  cd ..
+  301  rmdir testdir
+  302  ls
+  303  cd ~/os_lab
+  304  cp file1.txt copy.txt
+  305  mv copy.txt renamed.txt
+  306  cmp file1.txt renamed.txt
+  307  diff file1.txt renamed.txt
+  308  pwd
+  309  ls
+  310  mkdir test
+  311  cd test
+  312  pwd
+  313  cd ..
+  314  rmdir test
+  315  touch file1.txt
+  316  echo "Hello" > source.txt
+  317  cat source.txt
+  318  cp source.txt destination.txt
+  319  mv destination.txt file2.txt
+  320  ls -l
+  321  wc source.txt
+  322  head source.txt
+  323  tail source.txt
+  324  grep "Hello" source.txt
+  325  find ~/os_lab -type f
+  326  ps
+  327  ps -f
+  328  sleep 60 &
+  329  ps
+  330  kill PID
+  331  nice -n 10 sleep 30 &
+  332  ps -o pid,ni,cmd
+  333  top
+  334  ip addr
+  335  ping -c 4 google.com
+  336  traceroute google.com
+  337  curl ...
+  338  wget ...
+  339  nslookup google.com
+  340  ss -tuln
+  341  sudo ufw status
+  342  sudo iptables -L
+  343  sudo tcpdump -c 10
+  344  sudo whoami
+  345  whoami
+  346  whereis gcc
+  347  which gcc
+  348  uname -a
+  349  systemctl status
+  350  df -h
+  351  du -sh ~/os_lab
+  352  lsblk
+  353  echo "Hello"
+  354  clear
+  355  which gcc
+  356  mount
+  357  man ls
+  358  top
+  359  ls -l | wc -l
+  360  echo "Hello" > test.txt
+  361  cat test.txt
+  362  ls /proc
+  363  cat /proc/cpuinfo
+  364  cat /proc/meminfo
+  365  cat /proc/version
+  366  ./p1
+  367  ./pl
+  368  cd ~/os_lab/ostep-code/cpu-api
+  369  gedit p1.c
+  370  nano p2.c
+  371  nano pl.c
+  372  nano p1.c
+  373  gedit p2.c
+  374  pwd
+  375  ls
+  376  mkdir test
+  377  cd test
+  378  pwd
+  379  cd ..
+  380  rmdir test
+  381  cat
+  382  cp
+  383  mv
+  384  rm
+  385  grep
+  386  find
+  387  head
+  388  pwd
+  389  ls
+  390  mkdir test
+  391  cd test
+  392  pwd
+  393  cd ..
+  394  rmdir test
+  395  touch file1.txt
+  396  echo "Hello" > source.txt
+  397  cat source.txt
+  398  cp source.txt destination.txt
+  399  mv destination.txt file2.txt
+  400  ls -l
+  401  wc source.txt
+  402  head source.txt
+  403  tail source.txt
+  404  ps
+  405  ps -f
+  406  sleep 60 &
+  407  ps
+  408  kill PID
+  409  nice -n 10 sleep 30 &
+  410  ps -o pid,ni,cmd
+  411  top
+  412  ip addr
+  413  ping -c 4 google.com
+  414  traceroute google.com
+  415  curl ...
+  416  wget ...
+  417  nslookup google.com
+  418  ss -tuln
+  419  sudo ufw status
+  420  sudo iptables -L
+  421  sudo tcpdump -c 10
+  422  sudo whoami
+  423  whoami
+  424  whereis gcc
+  425  which gcc
+  426  uname -a
+  427  systemctl status
+  428  df -h
+  429  du -sh ~/os_lab
+  430  lsblk
+  431  ls -l | wc -l
+  432  echo "Hello" > test.txt
+  433  cat test.txt
+  434  ls /proc
+  435  cat /proc/cpuinfo
+  436  cat /proc/meminfo
+  437  cat /proc/version
+  438  cd ~/os_lab/ostep-code/cpu-api
+  439  make
+  440  ./p1
+  441  ./p2
+  442  ./p3
+  443  ./p4
+  444  cat p4.output
+  445  gedit p1.c
+  446  gedit ~/os_lab/ostep-code/cpu-api/p1.c &
+  447  pkill gedit
+  448  gedit ~/os_lab/ostep-code/cpu-api/p1.c &
+  449  killall gedit
+  450  gedit
+  451  pkill -9 gedit
+  452  mv ~/.config/gedit ~/.config/gedit_backup 2>/dev/null
+  453  mv ~/.cache/gedit ~/.cache/gedit_backup 2>/dev/null
+  454  gedit --standalone --new-window ~/os_lab/ostep-code/cpu-api/p1.c &
+  455  echo &DISPLAY
+  456  echo $DISPLAY
+  457  echo $WAYLAND_DISPLAY
+  458  GDK_BACKEND=x11 gedit ~/os_lab/ostep-code/cpu-api/p1.c &
+  459  sudo apt install --reinstall gedit -y
+  460  gedit ~/os_lab/ostep-code/cpu-api/p1.c &
+  461  gedit
+  462  export DISPLAY=:0
+  463  export GDK_BACKEND=x11
+  464  gedit ~/os_lab/ostep-code/cpu-api/p1.c &
+  465  echo $DISPLAY
+  466  echo $WAYLAND_DISPLAY
+  467  nano p3.c
+  468  nano p4.c
+  469  nano p3.c
+  470  nano p2.c
+  471  nano p1.c
+  472  nano
+  473  gedit
+  474  cd ~/os_lab
+  475  ls -lh
+  476  find ~/os_lab -type f | wc -l
+  477  find ~/os_lab -type f
+  478  cd ~/os_lab
+  479  find . -type f
+  480  gedit
+  481  cd ~/os_lab
+  482  pwd
+  483  ls
+  484  ls -lah ~/os_lab
+  485  sudo apt install gir1.2-peas-1.0 libpeas-1.0-0 -y
+  486  sudo apt install gir1.2-peas-1.0 libpeas-1.0-1 -y
+  487  dpkg -L gir1.2-peas-1.0 | grep typelib
+  488  pkill -9 gedit
+  489  gedit ~/os_lab/ostep-code/cpu-api/p1.c &
+  490  gedit
+  491  gedit p2.c
+  492  ps aux | grep gedit
+  493  gedit p2.c
+  494  explorer.exe .
+  495  explorer.exe /home/dell/os_lab/ostep-code/cpu-api
+  496  pwd
+  497  ls
+  498  mkdir test
+  499  cd test
+  500  pwd
+  501  cd ..
+  502  rmdir test
+  503  pwd
+  504  cd ~/os_lab
+  505  echo "===== B1 DIRECTORY COMMANDS ====="
+  506  pwd
+  507  ls
+  508  mkdir -p screenshot_test
+  509  cd screenshot_test
+  510  pwd
+  511  cd ..
+  512  ls
+  513  rmdir screenshot_test
+  514  echo "===== B1 COMPLETE ====="
+  515  cd ~/os_lab
+  516  echo "===== B2 FILE COMMANDS ====="
+  517  echo "Hello Operating System Lab" > screenshot_source.txt
+  518  cat screenshot_source.txt
+  519  cp screenshot_source.txt screenshot_copy.txt
+  520  mv screenshot_copy.txt screenshot_renamed.txt
+  521  ls -l screenshot_source.txt screenshot_renamed.txt
+  522  cmp screenshot_source.txt screenshot_renamed.txt
+  523  diff screenshot_source.txt screenshot_renamed.txt
+  524  head screenshot_source.txt
+  525  tail screenshot_source.txt
+  526  wc screenshot_source.txt
+  527  grep "Hello" screenshot_source.txt
+  528  find ~/os_lab -name "screenshot_source.txt"
+  529  echo "===== B2 COMPLETE ====="
+  530  echo "Hello"
+  531  clear
+  532  which gcc
+  533  mount
+  534  man ls
+  535  top
+  536  echo "Hello"
+  537  clear
+  538  which gcc
+  539  mount
+  540  man ls
+  541  top
+  542  mkdir -p ~/os_lab_2
+  543  pwd
+  544  sudo apt update
+  545  sudo apt install build-essential
+  546  gcc --version
+  547  mkdir -p ~/os_lab2_q1
+  548  cd ~/os_lab2_q1
+  549  gcc -Wall -Wextra -std=gnu11 cpu_finite.c -o cpu_finite
+  550  gcc -Wall -Wextra -std=gnu11 mem_finite.c -o mem_finite
+  551  gcc -Wall -Wextra -std=gnu11 threads_finite.c -o threads_finite -pthread
+  552  gcc -Wall -Wextra -std=gnu11 p1_fork.c -o p1_fork
+  553  gcc -Wall -Wextra -std=gnu11 p2_wait.c -o p2_wait
+  554  gcc -Wall -Wextra -std=gnu11 p3_exec.c -o p3_exec
+  555  gcc -Wall -Wextra -std=gnu11 p4_redirect.c -o p4_redirect
+  556  gcc -Wall -Wextra -std=gnu11 termination.c -o termination
+  557  nano cd ~/os_lab_2
+  558  ./cpu.c
+  559  pwd
+  560  cd ~/os_lab_2
+  561  pwd
+  562  nano q1_fork.c
+  563  ls
+  564  nano cpu_finite.c
+  565  ./cpu_finite.c
+  566  gcc cpu_finite.c -o cpu_finite
+  567  ./cpu_finite.c
+  568  ./cpu_finite
+  569  ./cpu_finite Hello 5
+  570  nano mem_finite.c
+  571  ./mem_finite
+  572  gcc mem_finite.c -o mem_finite
+  573  ./ mem_finite
+  574  ./ mem_finite 3
+  575  ./mem_finite
+  576  nano mem_finite.c
+  577  nano threads_finite.c
+  578  gcc threads_finite.c -o threads_finite
+  579  ./threads_finite
+  580  hello 5
+  581  gcc threads_finite.c -o threads_finite -pthreads
+  582  gcc -Wall -Wextra -std=gnu11 threads_finite.c -o threads_finite -pthread
+  583  ./threads_finite
+  584  5
+  585  ./threads_finite 5
+  586  nano p1_fork.c
+  587  gcc p1_fork.c -o p1_fork
+  588  ./p1_fork
+  589  nano p1_fork.c
+  590  nano p2_wait.c
+  591  gcc p2_wait.c -o p2_wait
+  592  ./p2_wait
+  593  nano p3_exec.c
+  594  gcc p3_exec.c -o p3_exec
+  595  ./p3_exec
+  596  nano p4_redirect.c
+  597  gcc p4_redirect.c -o p4_redirect
+  598  ./p4_redirect
+  599  cat p4.output
+  600  nano termination.c
+  601  gcc termination.c -o terminatin
+  602  ./termination
+  603  gcc termination.c -o termination
+  604  ./termination
+  605  ls
+  606  flex --version
+  607  sudo apt install flex
+  608  gedit lexer.1
+  609  ls
+  610  flex lexer.1
+  611  ls
+  612  nl -ba lexer.1
+  613  gedit lexer.1
+  614  flex lexer.1
+  615  ls
+  616  gcc lex.yy.c -o lexer
+  617  ./lexer
+  618  ls
+  619  ./lexer
+  620  gedit lexel.1
+  621  gedit lexer.1
+  622  flex lexer.1
+  623  gcc lex.yy.c -o lexer
+  624  ./lexer
+  625  gedit
+  626  git --version
+  627  python3 --version
+  628  mkdir -p ~/CryptoLabX
+  629  cd ~/CryptoLabX
+  630  pwd
+  631  git init
+  632  mkdir classical attacks math modern analysis datasets outputs docs tests utils
+  633  touch main.py README.md requirements.txt
+  634  tree
+  635  gedit datasets/sample.txt
+  636  cat datasets/sample.txt
+  637  git status
+  638  git add .
+  639  git commit -m "Initial CryptoLabX project structure"
+  640  git config --global user.name "bh
+  641  git config --global user.name "Bharat Saini"
+  642  git config --global user.email "2024ucp1725@mnit.ac.in"
+  643  git config --global --list
+  644  cd ~
+  645  mkdir CrytoLabX_Group08
+  646  cd CryptoLabX_Group08
+  647  pwd
+  648  ls
+  649  cd~
+  650  cd ~
+  651  mkdir CryptoLabX_Group08
+  652  cd CryptoLabX_Group08
+  653  pwd
+  654  ls
+  655  git init
+  656  mkdir -p classical attacks math modern analysis datasets outputs docs tests utils
+  657  ls
+  658  gedit main.py
+  659  ls
+  660  python3 main.py
+  661  cd datasets
+  662  gedit message1.txt
+  663  gedit message2.txt
+  664  gedit message3.txt
+  665  gedit message4.txt
+  666  gedit message5.txt
+  667  ls
+  668  cd ..
+  669  python3 main.py
+  670  outputs/crptolabx.log
+  671  cat outputs/cryptolabx.log
+  672  pwd
+  673  gedit README.md
+  674  gedit requirements.txt
+  675  touch classical/.gitkeep
+  676  touch attacks/.gitkeep
+  677  touch math/.gitkeep
+  678  touch modern/.gitkeep
+  679  touch analysis/.gitkeep
+  680  touch outputs/.gitkeep
+  681  touch docs/.gitkeep
+  682  touch tests/.gitkeep
+  683  touch utils/.gitkeep
+  684  find . -maxdepth 2 -type f
+  685  git status
+  686  git add .
+  687  git status
+  688  git commit -m "Initiat CryptoLabX project structure"
+  689  https://github.com/YOUR_USERNAME/CryptoLabX_GroupXX
+  690  git remote add origin https://github.com/2024ucp1725-bot/CryptoLabX_Group08.git
+  691  git remote -v
+  692  git branch -M main
+  693  git push -u origin main
+  694  git branch -M main
+  695  git push -u origin main
+  696  pwd
+  697  python3 main.py
+  698  cat outputs/crtptolabx.log
+  699  ls outputs
+  700  grep -n "log_action" main.py
+  701  cat outputs/cryptolabx.log
+  702  git status
+  703  git add outputs/cryptolabx.log
+  704  git commit -m "Add execution log"
+  705  git push
+  706  cat /etc/os-release
+  707  python3 --version
+  708  pip show pysonar
+  709  sudo docker ps
+  710  python3 -m venv .venv
+  711  source .venv/bin/activate
+  712  python -m pip install pysonar
+  713  echo "Problem: pip install pysonar was blocked by the externally-managed Python environment (PEP 668)."
+  714  echo "Solution: Created and activated a Python virtual environment (.venv), then installed pysonar inside it."
+  715  sudo docker ps
+  716  docker --version
+  717  pip show pysonar
+  718  ls -la
+  719  echo "Final SonarQube analysis completed successfully."
+  720  exit
+  721  cat /etc/os-release
+  722  uname -a
+  723  python3 --version
+  724  docker -- version
+  725  sudo apt install docker.io sudo apt install podman-docker
+  726  sudo apt install docker.io
+  727  docker --version
+  728  docker ps
+  729  sudo docker ps
+  730  sudo docker run -d --name sonarqube -p 9000:9000 -v sonarqube_data:/opt/sonarqube/data -v sonarqube_extensions:/opt/sonarqube/extensions -v sonarqube_logs:/opt/sonarqube/logs sonarqube:community
+  731  sudo docker ps
+  732  mkdir -p ~/SAST_SonarQube_Group08
+  733  cd ~/SAST_SonarQube_Group08
+  734  pwd
+  735  pip install pysonar
+  736  sudo apt install python3-pip
+  737  pip install pysonar
+  738  sudo apt install python3-venv -y
+  739  python3 -m venv .venv
+  740  source .venv/bin/activate
+  741  python -m pip install --upgrade pip
+  742  python -m pip install pysonar
+  743  pysonar --version
+  744  pysonar --help
+  745  python --version
+  746  pip show pysonar
+  747  gedit vulnerable_app.py
+  748  ls
+  749  cat vulnerable_app.py
+  750  python vulnerable_app.py
+  751  gedit sonar-project.properties
+  752  ls -la
+  753  sonar.projectKey=SAST_SonarQube_Group08
+  754  sonar.projectName=SAST_SonarQube_Group08
+  755  sonar.sources=.
+  756  sonar.python.version=3.14
+  757  cat sonar-project.properties
+  758  export SONAR_TOKEN='sqp_ff58f50cdeda82218ae3441b9425ef8e38bf5105'
+  759  export SONAR_HOST_URL='http://localhost:9000'
+  760  export SONAR_PROJECT_KEY='SAST_SonarQube_Group08'
+  761  echo "$SONAR_HOST_URL"
+  762  echo "$SONAR_PROJECT_KEY"
+  763  (.venv) ... ~/SAST_SonarQube_Group08$
+  764  pysonar --help
+  765  ls
+  766  cat sonar-project.properties
+  767  pysonar   --sonar-host-url="$SONAR_HOST_URL"   --sonar-token="$SONAR_TOKEN"   --sonar-project-key="$SONAR_PROJECT_KEY"   --sonar-sources=.
+  768  gedit vulnerable_app.py
+  769  pysonar --sonar-host-url=http://localhost:9000 --sonar-token="$SONAR_TOKEN" --sonar-project-key="$SONAR_PROJECT_KEY"
+  770  gedit vulnerable_app.py
+  771  (.venv) dell@DESKTOP-U88T1EK:~/SAST_SonarQube_Group08$
+  772  pysonar
+  773  ~/SAST_SonarQube_Group08
+  774  history > command_history.txt
+  775  cat command_history.txt
+  776  script sast_lab_log.txt
+  777  cat sast_lab_log.txt
+  778  0
+  779  exit 0
+  780  script sast_lab_log.txt
+  781  cat sast_lab_log.txt
+  782  exit 0
+  783  cat sast_lab_log.txt
+  784  ls -lh sast_lab_log.txt
+  785  cat sast_lab_log.txt
+  786  git status
+  787  sast_lab_log.txt
+  788  command_history.txt
+  789  cd ~/SAST_SonarQube_Group08
+  790  ls -lh sast_lab_log.txt command_history.txt
+  791  cat sast_lab_log.txt
+  792  cd ~
+  793  ls
+  794  cd CryptoLabX
+  795  git status
+  796  git remote -v
+  797  mkdir -p secure_application
+  798  ls
+  799  cd secure_application
+  800  pwd
+  801  mkdir -p src reports screenshots sast outputs testcases
+  802  ls
+  803  cd src
+  804  pwd
+  805  ls
+  806  CryptoLabX/secure_application/src
+  807  ls
+  808  pwd
+  809  ls
+  810  gedit ecommerce.py
+  811  ecommerce.py
+  812  ./ecommerce.py
+  813  ls -l
+  814  python3 ecommerce.py
+  815  echo "Test upload file for SAST lab" > test_upload.txt
+  816  python3 ecommerce.py
+  817  ls -la uploads
+  818  cd ..
+  819  git status
+  820  sudo docker ps
+  821  cd src
+  822  echo "$SONAR_HOST_URL"
+  823  sudo docker ps -a
+  824  sudo docker start sonarqube
+  825  sudo docker ps
+  826  sudo docker inspect sonarqube --format '{{range .Mounts}}{{println .Type .Source "->" .Destination}}{{end}}'
+  827  sudo docker exec sonarqube find /opt/sonarqube -name "h2*.jar" -o -name "*h2*.jar"
+  828  sudo docker stop sonarqube
+  829  sudo docker exec -it sonarqube bash
+  830  sudo docker start sonarqube
+  831  sudo docker ps
+  832  sudo docker exec -it sonarqube bash
+  833  sudo docker logs sonarqube --tail 30
+  834  cd ~/CryptoLabX/secure_application
+  835  ls -la
+  836  find . -maxdepth 2 -type f
+  837  cd ..
+  838  pwd
+  839  cd secure_application
+  840  pwd
+  841  pysonar   --sonar-host-url=http://localhost:9000   --sonar-token=sqp_2f75e2d05b7ee148a64fdd1da89015fa1225ea74   --sonar-project-key=ECommerce_SAST_Group08
+  842  source .venv/bin/activate
+  843  python3 -m venv .venv
+  844  sourcen .venv/bin/activate
+  845  source .venv/bin/activate
+  846  pip install pysonar
+  847  pip show pysonar
+  848  pysonar   --sonar-host-url=http://localhost:9000   --sonar-token=sqp_2f75e2d05b7ee148a64fdd1da89015fa1225ea74   --sonar-project-key=ECommerce_SAST_Group08
+  849  cd ~/CryptoLabX/secure_application/src
+  850  ls
+  851  gedit vulnerable_ecommerce.py
+  852  ls -l vulnerable_ecommerce.py
+  853  cd ~/CryptoLabX/secure_application
+  854  source .venv/bin/activate
+  855  ls src/vulnerable_ecommerce.py
+  856  pysonar   --sonar-host-url=http://localhost:9000   --sonar-token=sqp_ae980ce1e5b06267412cbeb4890df551dff06efd   --sonar-project-key=ECommerce_SAST_Group08
+  857  git status
+  858  git add .
+  859  git status
+  860  git commit -m "Add secure ecommerce application and SonarQube analysis"
+  861  git remote -v
+  862  git branch --show-current
+  863  git remote add origin
+  864  git remote add origin https://github.com/2024ucp1725-bot/secure_application.git
+  865  git remote -v
+  866  git push -u origin master
+  867  cd ~/CryptoLabX/secure_application
+  868  git rev-parse --show-toplevel
+  869  cd ~/CryptoLabX
+  870  git status
+  871  gedit README.md
+  872  git status
+  873  cd ~/CryptoLabX/secure_application
+  874  gedit testcases/testcases.md
+  875  git status
+  876  gedit sast/sonarqube_report.md
+  877  cat sast/sonarqube_report.md
+  878  gedit outputs/final_result.txt
+  879  cat  outputs/final_result.txt
+  880  git status
+  881  find . -maxdepth 2 -type f | sort
+  882  git status
+  883  gedit .gitignore
+  884  git add README.md outputs/ sast/ testcases/ .gitignore
+  885  git status
+  886  git add outputs/ sast/ testcases
+  887  git add outputs/ sast/ testcases/
+  888  git status
+  889  git add .gitignore
+  890  git add ../README.md
+  891  git status
+  892  git commit -m "Add SAST reports and security test cases"
+  893  git push origin master
+  894  git status
+  895  cd ~/CryptoLabX
+  896  git status
+  897  git remote -v
+  898  cd ~
+  899  git clone https://github.com/2024ucp1725-bot/CryptoLabX_Group08.git CryptoLabX_Main
+  900  cd ~CryptoLabX_Main
+  901  ~/CryptoLabX_Main
+  902  git status
+  903  cd ~/CryptoLabX_Main
+  904  git status
+  905  ls
+  906  find . -maxdepth 2 -type d | sort
+  907  cd ~/CryptoLabX
+  908  ls
+  909  cd ~/CryptoLabX_Main
+  910  ls
+  911  cp -r ~/CryptoLabX/secure_application ./secure_application
+  912  ls secure_application
+  913  git status
+  914  cd ~/CryptoLabX_Main
+  915  gedit README.md
+  916  git status
+  917  git add README.md
+  918  git commit -m "Update Assignment 3 README"
+  919  git push
+  920  git status
+  921  git remote -v
+  922  git log --oneline -5
+  923  find secure_application -maxdepth 2 -type f | sort
+  924  ls -la secure_application
+  925  cd ~/CryptoLabX_Main
+  926  gedit secure_application/README.md
+  927  git status
+  928  git add secure_application/
+  929  git status
+  930  git commit -m "Add Lab Assignment 3 secure application"
+  931  git push
+  932  git status
+  933  ./p1
+  934  mkdir test
+  935  cd test
+  936  pwd
+  937  ls
+  938  tree
+  939  rmdir test
+  940  rm file.txt
+  941  cd ~/CrptoLabX_Main
+  942  ls
+  943  cd ~/cryptoLabX_Main
+  944  cd ~/CryptoLabX_Main
+  945  git status
+  946  mkdir -p attacks/shift_cipher_attack/src
+  947  mkdir -p attacks/shift_cipher_attack/dictionary
+  948  mkdir -p attacks/shift_cipher_attack/testcases
+  949  mkdir -p attacks/shift_cipher_attack/outputs
+  950  mkdir -p attacks/shift_cipher_attack/screenshots
+  951  mkdir -p attacks/shift_cipher_attack/reports
+  952  find attacks/shift_cipher_attack -maxdepth 2 -type d | sort
+  953  gedit attacks/shift_cipher_attack/src/shift_cipher.py
+  954  python3 attacks/shift_cipher_attack/src/shift_cipher.py
+  955  git add attacks/shift_cipher_attack/src/shift_cipher.py
+  956  git commit -m "Implemented Shift Cipher"
+  957  git push
+  958  gedit attacks/shift_cipher_attack/dictionary/english_words.txt
+  959  gedit attacks/shift_cipher_attack/src/brute_force_dictionary.py
+  960  python3 attacks/shift_cipher_attack/src/brute_force_dictionary.py
+  961  git add attacks/shift_cipher_attack/dictionary/english_words.txt
+  962  git add attacks/shift_cipher_attack/src/brute_force_dictionary.py
+  963  git commit -m "Added brute-force and dictionary scoring"
+  964  git push
+  965  gedit attacks/shift_cipher_attack/src/chi_square_attack.py
+  966  python3 attacks/shift_cipher_attack/src/chi_square_attack.py
+  967  python3 attacks/shift_cipher_attack/src/chi_square_attack.py > attacks/shift_cipher_attack/outputs/chi_square_output.txt
+  968  python3 attacks/shift_cipher_attack/src/brute_force_dictionary.py > attacks/shift_cipher_attack/outputs/dictionary_output.txt
+  969  git add attacks/shift_cipher_attack/src/chi_square_attack.py
+  970  git add attacks/shift_cipher_attack/outputs/
+  971  git commit -m "Added Chi-Square cryptanalysis"
+  972  git push
+  973  gedit attacks/shift_cipher_attack/src/main.py
+  974  python3 attacks/shift_cipher_attack/src/main.py
+  975  python3 attacks/shift_cipher_attack/src/main.py > attacks/shift_cipher_attack/outputs/comparison_output.txt
+  976  gedit attacks/shift_cipher_attack/testcases/testcases.md
+  977  git add attacks/shift_cipher_attack/src/main.py
+  978  git add attacks/shift_cipher_attack/testcases/
+  979  git add attacks/shift_cipher_attack/outputs/
+  980  git commit -m "Added cryptanalysis comparison and test cases"
+  981  git push
+  982  gedit attacks/shift_cipher_attack/reports/failure_analysis.md
+  983  gedit attacks/shift_cipher_attack/reports/observations.md
+  984  gedit attacks/shift_cipher_attack/README.md
+  985  git add attacks/shift_cipher_attack/reports/
+  986  git add attacks/shift_cipher_attack/README.md
+  987  git commit -m "Added failure analysis and documentation"
+  988  git push
+  989  cd ~/CryptoLabX_Main
+  990  gedit attacks/shift_cipher_attack/reports/final_report.md
+  991  git add attacks/shift_cipher_attack/reports/final_report.md
+  992  git commit -m "Added final Assignment 4 report"
+  993  git push
+  994  git status
+  995  cd ~/CryptoLabX_Main
+  996  rm -rf attacks/shift_cipher_attack/src/__pycache__
+  997  git status
+  998  cd ~/CryptoLabX_Main
+  999  history > attacks/shift_cipher_attack/command_history.txt
