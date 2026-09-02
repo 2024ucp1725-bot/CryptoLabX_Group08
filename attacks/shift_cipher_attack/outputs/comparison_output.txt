@@ -1,0 +1,20 @@
+SHIFT CIPHER CRYPTANALYSIS COMPARISON
+--------------------------------------
+Plaintext       : this is a simple secret message
+Ciphertext      : ymnx nx f xnruqj xjhwjy rjxxflj
+Actual Key      : 5
+
+Dictionary Method
+Predicted Key   : 5
+Predicted Text  : this is a simple secret message
+Correct?        : True
+
+Chi-Square Method
+Predicted Key   : 5
+Predicted Text  : this is a simple secret message
+Correct?        : True
+
+RESULT TABLE
+Test Case | Actual | Dictionary | Chi-Square
+----------|--------|------------|-----------
+Test 1    |   5    |     5      |     5     
