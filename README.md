@@ -84,3 +84,24 @@ The analysis identified 4 issues related to security and code quality.
 - [x] Test cases added
 - [x] Output generated
 - [x] GitHub repository updated
+## Lab Assignment 4 – Shift Cipher Cryptanalysis
+
+Group: 08
+
+Implemented Shift Cipher and performed cryptanalysis using:
+
+1. Brute Force + Dictionary Scoring
+2. Chi-Square Analysis
+
+The two cryptanalysis methods were compared using multiple test cases.
+
+Files:
+- attacks/shift_cipher_attack/src/
+- attacks/shift_cipher_attack/dictionary/
+- attacks/shift_cipher_attack/testcases/
+- attacks/shift_cipher_attack/outputs/
+- attacks/shift_cipher_attack/reports/
+- attacks/shift_cipher_attack/screenshots/
+
+Result:
+Shift cipher encryption, decryption and cryptanalysis were successfully implemented and tested.
