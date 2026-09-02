@@ -51,6 +51,28 @@ being developed as part of the Cryptography Laboratory.
 
 ```bash
 python3 main.py
+## Lab Assignment 2 – SAST Security Analysis
+
+Group: 08
+
+Assigned SAST Tool: SonarQube
+
+The E-Commerce application was analyzed using SonarQube for Static Application Security Testing (SAST).
+
+### SAST Issues Identified
+
+1. CSRF protection disabled
+2. HTTP methods should be specified
+3. HTTP methods should be specified
+4. Debug mode should be disabled in production
+
+### Lab Progress
+
+- [x] Application analyzed
+- [x] SonarQube analysis performed
+- [x] Security issues identified
+- [x] SAST report generated
+- [x] Results documented
 ## Lab Assignment 3 – Secure E-Commerce Website
 
 Student Name: Bharat Saini
