@@ -1,0 +1,33 @@
+Chi-Square Cryptanalysis
+------------------------
+Key:  5 | Chi-Square: 22.01 | th is a simple secret message
+Key:  9 | Chi-Square: 28.96 | pd eo w oeilha oaynap iaoowca
+Key: 11 | Chi-Square: 130.05 | nb cm u mcgjfy mywlyn gymmuay
+Key:  3 | Chi-Square: 142.24 | vj ku c ukorng ugetgv oguucig
+Key: 16 | Chi-Square: 147.54 | iw xh p hxbeat htrgti bthhpvt
+Key:  2 | Chi-Square: 160.59 | wk lv d vlpsoh vhfuhw phvvdjh
+Key: 17 | Chi-Square: 167.00 | hv wg o gwadzs gsqfsh asggous
+Key: 21 | Chi-Square: 172.17 | dr sc k cswzvo combod wocckqo
+Key: 20 | Chi-Square: 178.64 | es td l dtxawp dpncpe xpddlrp
+Key:  4 | Chi-Square: 211.38 | ui jt b tjnqmf tfdsfu nfttbhf
+Key: 22 | Chi-Square: 247.19 | cq rb j brvyun bnlanc vnbbjpn
+Key: 13 | Chi-Square: 254.02 | lz ak s kaehdw kwujwl ewkksyw
+Key: 18 | Chi-Square: 301.23 | gu vf n fvzcyr frperg zrffntr
+Key:  6 | Chi-Square: 309.17 | sg hr z rhlokd rdbqds ldrrzfd
+Key: 23 | Chi-Square: 319.75 | bp qa i aquxtm amkzmb umaaiom
+Key:  1 | Chi-Square: 345.26 | xl mw e wmqtpi wigvix qiwweki
+Key: 15 | Chi-Square: 363.08 | jx yi q iycfbu iushuj cuiiqwu
+Key: 25 | Chi-Square: 437.73 | zn oy g yosvrk ykixkz skyygmk
+Key:  8 | Chi-Square: 563.28 | qe fp x pfjmib pbzobq jbppxdb
+Key: 12 | Chi-Square: 791.14 | ma bl t lbfiex lxvkxm fxlltzx
+Key: 14 | Chi-Square: 1051.37 | ky zj r jzdgcv jvtivk dvjjrxv
+Key: 19 | Chi-Square: 1142.81 | ft ue m euybxq eqodqf yqeemsq
+Key:  7 | Chi-Square: 1183.74 | rf gq y qgknjc qcapcr kcqqyec
+Key:  0 | Chi-Square: 1423.04 | ym nx f xnruqj xjhwjy rjxxflj
+Key: 24 | Chi-Square: 1457.73 | ao pz h zptwsl zljyla tlzzhnl
+Key: 10 | Chi-Square: 1466.27 | oc dn v ndhkgz nzxmzo hznnvbz
+
+Best Prediction
+Key       : 5
+Score     : 22.01
+Plaintext : th is a simple secret message

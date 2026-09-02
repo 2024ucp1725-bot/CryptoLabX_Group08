@@ -1,0 +1,33 @@
+Brute Force + Dictionary Scoring
+--------------------------------
+Key:  5 | Score:  5 | th is a simple secret message
+Key: 25 | Score:  0 | zn oy g yosvrk ykixkz skyygmk
+Key: 24 | Score:  0 | ao pz h zptwsl zljyla tlzzhnl
+Key: 23 | Score:  0 | bp qa i aquxtm amkzmb umaaiom
+Key: 22 | Score:  0 | cq rb j brvyun bnlanc vnbbjpn
+Key: 21 | Score:  0 | dr sc k cswzvo combod wocckqo
+Key: 20 | Score:  0 | es td l dtxawp dpncpe xpddlrp
+Key: 19 | Score:  0 | ft ue m euybxq eqodqf yqeemsq
+Key: 18 | Score:  0 | gu vf n fvzcyr frperg zrffntr
+Key: 17 | Score:  0 | hv wg o gwadzs gsqfsh asggous
+Key: 16 | Score:  0 | iw xh p hxbeat htrgti bthhpvt
+Key: 15 | Score:  0 | jx yi q iycfbu iushuj cuiiqwu
+Key: 14 | Score:  0 | ky zj r jzdgcv jvtivk dvjjrxv
+Key: 13 | Score:  0 | lz ak s kaehdw kwujwl ewkksyw
+Key: 12 | Score:  0 | ma bl t lbfiex lxvkxm fxlltzx
+Key: 11 | Score:  0 | nb cm u mcgjfy mywlyn gymmuay
+Key: 10 | Score:  0 | oc dn v ndhkgz nzxmzo hznnvbz
+Key:  9 | Score:  0 | pd eo w oeilha oaynap iaoowca
+Key:  8 | Score:  0 | qe fp x pfjmib pbzobq jbppxdb
+Key:  7 | Score:  0 | rf gq y qgknjc qcapcr kcqqyec
+Key:  6 | Score:  0 | sg hr z rhlokd rdbqds ldrrzfd
+Key:  4 | Score:  0 | ui jt b tjnqmf tfdsfu nfttbhf
+Key:  3 | Score:  0 | vj ku c ukorng ugetgv oguucig
+Key:  2 | Score:  0 | wk lv d vlpsoh vhfuhw phvvdjh
+Key:  1 | Score:  0 | xl mw e wmqtpi wigvix qiwweki
+Key:  0 | Score:  0 | ym nx f xnruqj xjhwjy rjxxflj
+
+Best Prediction
+Key       : 5
+Score     : 5
+Plaintext : th is a simple secret message
