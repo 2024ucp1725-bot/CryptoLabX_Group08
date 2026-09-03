@@ -1,0 +1,32 @@
+References and Additional Reading
+
+The one-time pad is popularly credited to Vernam [172], who filed a patent on it, but recent historical research [25] shows that it was invented some
+
+
+Introduction to Modern Cryptography
+
+35 years earlier. Analysis of the one-time pad had to await the ground-breaking work of Shannon [154], who introduced the notion of perfect secrecy.
+
+In this chapter we studied perfectly secret encryption. Some other cryp-tographic problems can also be solved with "perfect" security. A notable example is the problem of message authentication where the aim is to prevent an adversary from (undetectably) modifying a message sent from one party to another. We study this problem in depth in Chapter 4, discussing "perfectly secure" message authentication in Section 4.6.
+
+Exercises
+
+2.1 Prove that, by redefining the key space, we may assume that the key-generation algorithm Gen chooses a key uniformly at random from the key space, without changing Pr[C=cMm for any m, c.
+
+Hint: Define the key space to be the set of all possible random tapes for the randomized algorithm Gen.
+
+2.2 Prove that, by redefining the key space, we may assume that Enc is deterministic without changing Pr[C=cMm] for any m, c.
+
+2.3 Prove or refute: An encryption scheme with message space M is per-fectly secret if and only if for every probability distribution over M and every Co, C₁ E C we have PrCco] Pr[C=C1].
+
+2.4 Prove the second direction of Lemma 2.4.
+
+2.5 Prove Lemma 2.6.
+
+2.6 For each of the following encryption schemes, state whether the scheme is perfectly secret. Justify your answer in each case.
+
+(a) The message space is M {0,...,4). Algorithm Gen chooses. a uniform key from the key space {0,...,5). Enc (m) returns [k+m mod 5], and Deck (c) returns [ck mod 5].
+
+(b) The message space is M = {m∈ {0,1} | the last bit of m is 0}. Gen chooses a uniform key from {0,1}-1. Enc (m) returns cipher-text m (k||0), and Deck (c) returns c (k||0).
+
+2.7 When using the one-time pad with the key k=0, we have Enck (m) = kemmand the message is sent in the clear! It has therefore been suggested to modify the one-time pad by only encrypting with k≠ 0 (i.e., to have Gen choose k uniformly from the set of nonzero keys of length (). Is this modified scheme still perfectly secret? Explain
